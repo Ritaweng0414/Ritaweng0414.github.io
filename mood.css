@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+  }
+  
+  .happy { background-color: #f0e68c; }
+  .sad { background-color: #add8e6; }

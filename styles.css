@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, sans-serif;
+    color: darkblue;
+    background-color: #bde3f8;
+}
+h1{
+    color: purple;
+    text-align: center;
+}
+p{
+    font-size: 10px;
+}
+img{
+    width: 250px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+ul{
+    margin-left: 20px;
+}
+#page-title{
+    text-align: center;
+}
+.highlight{
+    color: rgb(7, 165, 251);
+    font-weight: blod;
+}
+.highlight { 
+    color: blue; 
+    font-weight: bold; 
+    }    
+#main-title {
+    color: black;
+    font-size: 24px;
+}
+
+.highlight { 
+    color: blue; 
+}
+#main-title:hover {
+    color: red;
+    text-decoration: underline;
+}
+img:hover {
+    opacity: 0.7;
+}
