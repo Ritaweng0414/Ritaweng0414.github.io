@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Changer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    .happy { background-color: #f0e68c; }
+    .sad { background-color: #add8e6; }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Enter your mood</h1>
+    <input type="text" id="moodInput" placeholder="happy or sad">
+    <button onclick="changeMood()">Change Mood</button>
+    <div id="message"></div>
+    <div id="emoji"></div>
+  </div>
+
+  <script>
+    function changeMood() {
+      const mood = document.getElementById("moodInput").value.toLowerCase();
+      const messageElement = document.getElementById("message");
+      const emojiElement = document.getElementById("emoji");
+
+      if (mood === "happy") {
+        document.body.className = "happy";
+        messageElement.textContent = "You are feeling happy!";
+        emojiElement.textContent = "😊";
+      } else if (mood === "sad") {
+        document.body.className = "sad";
+        messageElement.textContent = "You are feeling sad.";
+        emojiElement.textContent = "😢";
+      } else {
+        messageElement.textContent = "Please type 'happy' or 'sad'.";
+        emojiElement.textContent = "";
+      }
+    }
+  </script>
+</body>
+</html>
